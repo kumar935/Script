@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Script</title>
+    <script src="node_modules/headjs/dist/1.0.0/head.js"></script>
+    <script>
+
+        var external = [
+            "node_modules/jquery/dist/jquery.min.js"
+        ];
+        head.load(external, function () {
+                    head.load("modules/main.js", function () {
+                        console.log("head: loaded main.js");
+                    });
+                });
+    </script>
+</head>
+<body>
+</body>
+</html>
